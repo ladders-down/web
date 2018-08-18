@@ -1,0 +1,8 @@
+{
+  "name": "ladders-down-web",
+  "version": "0.1.0",
+  "description": "The ladders down website",
+  "repository": "https://github.com/ladders-down/web.git",
+  "author": "dannycampa <me@dannycampa.com>",
+  "license": "MIT"
+}
