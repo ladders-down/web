@@ -1,0 +1,35 @@
+$spacing-map: (
+    mg: margin,
+    pd: padding,
+);
+$spacing-values: '0', '05', '1', '2', '3', '4', '5';
+$dimension-map: (
+    t: top,
+    r: right,
+    l: left,
+    b: bottom
+);
+
+@each $prefix, $rule in $spacing-map {
+    @each $value in $spacing-values {
+        .#{$prefix}-#{$value} {
+            #{$rule}: #{$value}rem;
+        }
+
+        .#{$prefix}-x-#{$value} {
+            #{$rule}-left: #{$value}rem;
+            #{$rule}-right: #{$value}rem;
+        }
+
+        .#{$prefix}-y-#{$value} {
+            #{$rule}-top: #{$value}rem;
+            #{$rule}-bottom: #{$value}rem; 
+        }
+        
+        @each $direction, $dir-rule in $dimension-map {
+            .#{$prefix}-#{$direction}-#{$value} {
+                #{$rule}-#{$dir-rule}: #{$value}rem;
+            }
+        }
+    }
+}
