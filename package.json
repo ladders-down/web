@@ -7,6 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "lint:sass": "yarn -s && sass-lint -c sass-lint.yml --no-exit --verbose",
+    "lint:typescript": "yarn -s && tslint -c tslint.json -e \"src/**/*.d.ts\" \"src/**/*.ts?(x)\"",
+    "lint": "yarn -s && yarn lint:typescript --fix && yarn lint:sass",
     "start": "webpack-dev-server"
   },
   "devDependencies": {
@@ -19,11 +22,14 @@
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
+    "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "ts-loader": "^4.5.0",
     "tslint": "^5.11.0",
     "tslint-eslint-rules": "^5.4.0",
+    "tslint-fix": "^0.1.3",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.0.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",

@@ -1,2 +1,8 @@
-node_modules
-dist
+node_modules/
+dist/
+.cache-loader/
+.DS_Store
+.nvmrc
+*.orig
+package-lock.json
+yarn-error.log

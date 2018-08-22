@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "eg2.tslint",
+    "robinbentley.sass-indented",
+    "glen-84.sass-lint",
+    "EditorConfig.editorconfig",
+    "kumar-harsh.graphql-for-vscode"
+  ]
+}

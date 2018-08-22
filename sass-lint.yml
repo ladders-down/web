@@ -1,0 +1,139 @@
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+  formatter: stylish
+
+files:
+  include: 'src/**/*.s+(a|c)ss'
+
+rules:
+  attribute-quotes: 2
+  border-zero:
+    - 2
+    -
+      convention: 'none'
+  bem-depth:
+    - 2
+    -
+      max-depth: 2
+  class-name-format:
+    - 2
+    -
+      convention: hyphenatedbem
+  clean-import-paths: 2
+  declarations-before-nesting: 2
+  empty-args: 2
+  empty-line-between-blocks: 2
+  final-newline: 2
+  force-attribute-nesting: 2
+  function-name-format: 2
+  hex-notation: 2
+
+  # This doesn't always work, ie after functions, it will through an error even
+  # for properly indented code.
+  # indentation: 2
+  leading-zero:
+    - 2
+    -
+      include: 2
+  mixin-name-format: 2
+  mixins-before-declarations: 2
+  nesting-depth:
+    - 2
+    -
+      max-depth: 3
+  no-color-keywords: 2
+  no-color-literals: 2
+  no-combinators: 2
+  no-css-comments: 2
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-extends: 2
+  no-ids: 2
+  no-important: 2
+  no-invalid-hex: 2
+  no-mergeable-selectors: 2
+  no-misspelled-properties: 2
+  no-qualifying-elements: 2
+  no-trailing-whitespace: 2
+  no-trailing-zero: 2
+  no-transition-all: 2
+  no-universal-selectors: 0
+  no-vendor-prefixes:
+    - 2
+    -
+      ignore-non-standard: 2
+  one-declaration-per-line: 2
+  property-units:
+    - 2
+    -
+      global: ['rem', 's']
+      per-property:
+        border: ['px']
+        border-top: ['px']
+        border-right: ['px']
+        border-bottom: ['px']
+        border-left: ['px']
+        border-radius: ['px']
+        border-bottom-width: ['px']
+        border-top-width: ['px']
+        border-left-width: ['px']
+        border-right-width: ['px']
+        border-top-left-radius: ['px']
+        border-top-right-radius: ['px']
+        border-bottom-left-radius: ['px']
+        border-bottom-right-radius: ['px']
+        border-width: ['px']
+        box-shadow: ['px']
+        width: ['rem', 'vw']
+        min-width: ['rem', 'vw']
+        max-width: ['rem', 'vw']
+        height: ['rem', 'vh']
+        min-height: ['rem', 'vh']
+        max-height: ['rem', 'vh']
+        letter-spacing: ['em']
+        line-height: ['rem']
+        top: ['%', 'rem']
+        right: ['%', 'rem']
+        bottom: ['%', 'rem']
+        left: ['%', 'rem']
+  pseudo-element: 2
+  quotes:
+    - 2
+    -
+      style: single
+  single-line-per-selector: 2
+  shorthand-values: 2
+  space-after-colon: 2
+  space-after-comma: 2
+
+  # Requires space around operator, but in some cases, no
+  # space may look better.
+  # space-around-operator: 2
+  space-before-bang: 2
+
+  # Defaults to false.
+  space-between-parens: 2
+  url-quotes: 2
+  variable-for-property:
+    - 2
+    -
+      properties:
+        - font-size
+        - font-weight
+        - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
+        - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - z-index
+  variable-name-format:
+    - 2
+    -
+      convention: hyphenatedlowercase
+  zero-unit: 2
