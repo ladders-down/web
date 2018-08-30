@@ -1,0 +1,39 @@
+$align: ('stretch', 'center', 'start', 'end');
+$justify: ('start', 'center', 'space-between', 'space-around', 'space-evenly');
+$direction: ('row', 'row-reverse', 'column', 'column');
+
+.flex {
+  display: flex;
+
+  &__grow {
+    flex-grow: 1;
+  }
+
+  &__shrink {
+    flex-shrink: 1;
+  }
+
+  &__align {
+    @each $value in $align {
+      &--#{$value} {
+        align-items: #{$value};
+      }
+    }
+  }
+
+  &__justify {
+    @each $value in $justify {
+      &--#{$value} {
+        justify-content: #{$value}
+      }
+    }
+  }
+
+  &__direction {
+    @each $value in $direction {
+      &--#{$value} {
+        flex-direction: #{$value}
+      }
+    }
+  }
+};

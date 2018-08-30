@@ -1,1 +1,9 @@
 @import 'reset';
+@import 'variables';
+
+html,
+body,
+.root {
+  background: $primary-background;
+  font-family: Arial, Helvetica, sans-serif;
+}

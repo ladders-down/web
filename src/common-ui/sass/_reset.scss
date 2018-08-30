@@ -2,6 +2,10 @@ $base-font-size: 62.6%;
 $base-margin: 0;
 $base-padding: 0;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: $base-font-size;
 }

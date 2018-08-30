@@ -2,7 +2,16 @@ $spacing-map: (
   mg: margin,
   pd: padding,
 );
-$spacing-values: '0', '05', '1', '2', '3', '4', '5';
+$spacing-values: (
+  '0': '0',
+  '05': '0.5rem',
+  '1': '1rem',
+  '2': '2rem',
+  '3': '3rem',
+  '4': '4rem',
+  '5': '5rem'
+);
+
 $dimension-map: (
   t: top,
   r: right,
@@ -11,24 +20,24 @@ $dimension-map: (
 );
 
 @each $prefix, $rule in $spacing-map {
-  @each $value in $spacing-values {
-    .#{$prefix}-#{$value} {
-      #{$rule}: #{$value}rem;
+  @each $class-value, $value in $spacing-values {
+    .#{$prefix}-#{$class-value} {
+      #{$rule}: #{$value};
     }
 
-    .#{$prefix}-x-#{$value} {
-      #{$rule}-left: #{$value}rem;
-      #{$rule}-right: #{$value}rem;
+    .#{$prefix}-x-#{$class-value} {
+      #{$rule}-left: #{$value};
+      #{$rule}-right: #{$value};
     }
 
-    .#{$prefix}-y-#{$value} {
-      #{$rule}-bottom: #{$value}rem;
-      #{$rule}-top: #{$value}rem;
+    .#{$prefix}-y-#{$class-value} {
+      #{$rule}-bottom: #{$value};
+      #{$rule}-top: #{$value};
     }
 
     @each $direction, $dir-rule in $dimension-map {
-      .#{$prefix}-#{$direction}-#{$value} {
-        #{$rule}-#{$dir-rule}: #{$value}rem;
+      .#{$prefix}-#{$direction}-#{$class-value} {
+        #{$rule}-#{$dir-rule}: #{$value};
       }
     }
   }
