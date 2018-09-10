@@ -16,7 +16,7 @@ module.exports = (env) => {
     resolve: {
       extensions: ['.ts', '.tsx', '.js'],
       alias: {
-        '@ladders': path.join(__dirname, 'src/'),
+        '@ladders': path.join(__dirname, 'src'),
         '@ladders-common-ui': path.join(__dirname, 'src/common-ui/')
       }
     },

@@ -13,6 +13,7 @@
     "noUnusedParameters": true,
     "outDir": "dist",
     "paths": {
+        "@ladders": ["src"],
         "@ladders/*": ["src/*"],
         "@ladders-common-ui/*": ["src/common-ui/*"]
     },
