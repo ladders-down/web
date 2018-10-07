@@ -43,6 +43,7 @@ export interface PublicProps {
   margin?: Spacings;
   padding?: Spacings;
   shrink?: boolean;
+  fullHeight?: boolean;
 }
 
 export interface StyleProps {
@@ -62,6 +63,10 @@ export class InjectStyles extends React.Component<Props, React.ComponentState> {
     classes = this.addClass(classes, this.getSpacingClasses());
 
     classes = this.addClass(classes, this.getDisplayClasses());
+
+    if (this.props.fullHeight) {
+      classes = this.addClass(classes, ['full-height']);
+    }
 
     const child = React.Children.only(this.props.children);
 

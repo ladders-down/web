@@ -14,14 +14,22 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.6",
+    "@types/graphql": "^14.0.1",
+    "@types/query-string": "^6.1.0",
     "@types/react": "^16.4.11",
     "@types/react-dom": "^16.0.7",
+    "@types/react-loadable": "^5.4.1",
+    "@types/react-redux": "^6.0.9",
+    "@types/react-router": "^4.0.31",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/redux": "^3.6.0",
     "autoprefixer": "^9.1.1",
     "css-loader": "^1.0.0",
     "css-mqpacker": "^7.0.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
+    "redux-devtools-extension": "^2.13.5",
     "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
@@ -36,9 +44,21 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "@types/react-modal": "^3.2.1",
+    "apollo-boost": "^0.1.16",
     "classnames": "^2.2.6",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
     "normalize.css": "^8.0.0",
+    "query-string": "^6.2.0",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.4.2",
+    "react-loadable": "^5.5.0",
+    "react-modal": "^3.6.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0"
   }
 }

@@ -8,13 +8,16 @@ module.exports = (env) => {
     mode: !env.production ? 'development' : 'production',
     devtool: 'inline-source-map',
     entry: './src/core/index.tsx',
+    devServer: {
+      historyApiFallback: true
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/core/index.ejs'
       }),
     ],
     resolve: {
-      extensions: ['.ts', '.tsx', '.js'],
+      extensions: ['.ts', '.tsx', '.mjs', '.js'],
       alias: {
         '@ladders': path.join(__dirname, 'src'),
         '@ladders-common-ui': path.join(__dirname, 'src/common-ui/')
